@@ -6,7 +6,7 @@ class anonBrowser(mechanize.Browser):
         mechanize.Browser.__init__(self)
         self.set_handle_robots(False)        
         self.proxies = proxies + ['http://94.202.58.58:80',\
-                                  'http://183.207.228.9:8096'] #These are open proxies found online that were added for testing
+                                  'http://183.207.228.9:8096'] #These are open proxies for testing
         self.user_agents = user_agents + ['Baiduspider+(+http://www.baidu.com/search/spider.htm)',\
             'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)',\
             'msnbot-webmaster/1.0 (+http://search.msn.com/msnbot.htm)', \
